@@ -485,6 +485,12 @@ Galapagos, Inca, Inca trail, Machu Picchu, Belize, Bali, Mexico, Baja, Viet Nam"
                       </p>
                     </div>
                     <form class="row" action="https://formsubmit.co/a8ca13cc10df148f31b12ca68a68ef4b" method="POST">
+                      <!-- Honeypot -->
+                       <input type="text" name="_honey" style="display:none;">
+                       <!-- Disabled Captcha -->
+                       <input type="hidden" name="_captcha" value="false">
+
+
                       <div class="col-12 col-md-6 mb-3">
                         <label
                           for="name"
@@ -495,17 +501,19 @@ Galapagos, Inca, Inca trail, Machu Picchu, Belize, Bali, Mexico, Baja, Viet Nam"
                         <input
                           type="text"
                           class="form-control"
-                          id="name"
+                          id="Name"
                           placeholder="Your Name"
                           name="name"
                           required=""
                         />
                       </div>
+
+
                       <div class="col-12 col-md-6 mb-3">
                         <label
                           for="email"
                           class="form-label"
-                          >Email</label
+                          >E-mail</label
                         >
                         <span class="text-danger">*</span>
                         <input
@@ -513,45 +521,47 @@ Galapagos, Inca, Inca trail, Machu Picchu, Belize, Bali, Mexico, Baja, Viet Nam"
                           class="form-control"
                           id="email"
                           placeholder="email@example.com"
-                          name="email"
+                          name="Email"
                           required=""
                         />
                       </div>
+
+
                       <!-- Phone -->
                       <div class="col-12 col-md-6 mb-3">
                         <!-- label -->
                         <label
                           class="form-label"
-                          for="businessFormPhone"
+                          for="phoneNumber"
                         >
-                          What's your phone number?
+                          What's your phone number? 
                           <span class="text-danger">*</span>
                         </label>
                         <!-- input -->
                         <input
                           class="form-control"
                           type="text"
-                          name="businessFormPhone"
-                          id="businessFormPhone"
-                          placeholder="Phone"
+                          name="Phone Number"
+                          id="PhoneNumber"
+                          placeholder="+1 (000) 000-0000"
                           required=""
                         />
-                        <div class="invalid-feedback">
-                          Please enter phone number.
-                        </div>
+                        <div class="invalid-feedback">Please enter phone number.</div>
                       </div>
+
+
                       <div class="col-12 mb-3">
                         <!-- label -->
                         <label
                           class="form-label"
-                          for="businessFormtext"
+                          for="comments"
                         >
                           Message
                         </label>
                         <!-- textarea -->
                         <textarea
                           class="form-control"
-                          id="businessFormtext"
+                          id="comments"
                           rows="3"
                           required
                         ></textarea>
